@@ -38,7 +38,7 @@ def car_purchasing_price_prediction(input_data):
   
 def main():
     
-    st.title('Car Price Prediction Web App')  
+    st.title('Car Purchase Budget Prediction Web App')  
 
     #take input from user
     with st.form("Form 1",clear_on_submit=True):
@@ -47,7 +47,7 @@ def main():
       credit_card_debt = st.text_input('credit card debt')
       person_net_worth = st.text_input('person net worth')
 
-      s_state=st.form_submit_button('Predict Car Purchasing Price')
+      s_state=st.form_submit_button('Predict Car Purchase Budget')
       if s_state:
         if(person_age.isdigit() and annual_salary.isdigit() and credit_card_debt.isdigit() and person_net_worth.isdigit() and int(person_age)>18 and int(person_age)<100 ):
           person_age=float(person_age)

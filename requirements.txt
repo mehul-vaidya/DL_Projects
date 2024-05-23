@@ -1,5 +1,5 @@
+tensorflow
 streamlit
 numpy
 keras
-tensorflow
 scikit-learn
